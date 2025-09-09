@@ -19,20 +19,19 @@
             background-size: cover;
             background-position: center;
         }
-        .destination-card-1 {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.cloudstars.info/222624044%20(1).jpg');
+        /* New style for the destination cards to be more compact */
+        .destination-card {
             background-size: cover;
             background-position: center;
+        }
+        .destination-card-1 {
+            background-image: url('https://www.cloudstars.info/222624044%20(1).jpg');
         }
         .destination-card-2 {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.cloudstars.info/sg1RwxZHQUSS0hKo4s3S_260e27a6-aff5-43f3-e607-55c4137b3687.webp');
-            background-size: cover;
-            background-position: center;
+            background-image: url('https://www.cloudstars.info/sg1RwxZHQUSS0hKo4s3S_260e27a6-aff5-43f3-e607-55c4137b3687.webp');
         }
         .destination-card-3 {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.cloudstars.info/Screenshot%20from%202024-12-07%2021-13-21.png');
-            background-size: cover;
-            background-position: center;
+            background-image: url('https://www.cloudstars.info/Screenshot%20from%202024-12-07%2021-13-21.png');
         }
     </style>
 </head>
@@ -59,29 +58,35 @@
 
     <main class="container mx-auto p-8">
 
-        <!-- Properties Section -->
+        <!-- Properties Section - New, more compact grid design -->
         <section id="properties" class="my-16">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Our Properties in Top Destinations</h2>
-            <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
-                <!-- Destination Card 1 -->
-                <div class="destination-card-1 bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 h-[400px] flex items-center justify-center p-6 text-white">
-                    <div class="text-center">
-                        <h3 class="text-4xl font-bold mb-2">Hurghada, Egypt</h3>
-                        <p class="text-lg mb-4">Explore the stunning Red Sea beaches and vibrant marine life.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Destination Card 1 - Hurghada -->
+                <div class="destination-card destination-card-1 relative w-full h-[300px] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300 group">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end justify-start p-6 text-white">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-1">Hurghada, Egypt</h3>
+                            <p class="text-sm">Explore the stunning Red Sea beaches and vibrant marine life.</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Destination Card 2 -->
-                <div class="destination-card-2 bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 h-[400px] flex items-center justify-center p-6 text-white">
-                    <div class="text-center">
-                        <h3 class="text-4xl font-bold mb-2">Portugal</h3>
-                        <p class="text-lg mb-4">Discover the historic charm and breathtaking landscapes of Portugal.</p>
+                <!-- Destination Card 2 - Portugal -->
+                <div class="destination-card destination-card-2 relative w-full h-[300px] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300 group">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end justify-start p-6 text-white">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-1">Portugal</h3>
+                            <p class="text-sm">Enjoy its historical charm and breathtaking landscapes.</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Destination Card 3 -->
-                <div class="destination-card-3 bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 h-[400px] flex items-center justify-center p-6 text-white">
-                    <div class="text-center">
-                        <h3 class="text-4xl font-bold mb-2">Spain</h3>
-                        <p class="text-lg mb-4">Experience the vibrant culture and stylish city life in Spain.</p>
+                <!-- Destination Card 3 - Spain -->
+                <div class="destination-card destination-card-3 relative w-full h-[300px] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300 group">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end justify-start p-6 text-white">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-1">Spain</h3>
+                            <p class="text-sm">Experience the vibrant culture and modern city life.</p>
+                        </div>
                     </div>
                 </div>
             </div>
