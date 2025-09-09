@@ -15,7 +15,7 @@
             text-align: left;
         }
         .hero-bg {
-            background-image: url('https://raw.githubusercontent.com/Mohamed-Elareef/Cloud-Stars/refs/heads/main/your-hero-image.jpg');
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://raw.githubusercontent.com/Mohamed-Elareef/Cloud-Stars/refs/heads/main/your-hero-image.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -32,6 +32,9 @@
         }
         .destination-card-3 {
             background-image: url('https://www.cloudstars.info/Screenshot%20from%202024-12-07%2021-13-21.png');
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
         }
     </style>
 </head>
@@ -64,7 +67,7 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Destination Card 1 - Hurghada -->
                 <div class="destination-card destination-card-1 relative w-full h-[300px] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300 group">
-                    <div class="absolute inset-0 flex items-end justify-start p-6 text-white">
+                    <div class="absolute inset-0 flex items-end justify-start p-6 text-white text-shadow">
                         <div>
                             <h3 class="text-2xl font-bold mb-1">Hurghada, Egypt</h3>
                             <p class="text-sm">Explore the stunning Red Sea beaches and vibrant marine life.</p>
@@ -73,7 +76,7 @@
                 </div>
                 <!-- Destination Card 2 - Portugal -->
                 <div class="destination-card destination-card-2 relative w-full h-[300px] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300 group">
-                    <div class="absolute inset-0 flex items-end justify-start p-6 text-white">
+                    <div class="absolute inset-0 flex items-end justify-start p-6 text-white text-shadow">
                         <div>
                             <h3 class="text-2xl font-bold mb-1">Portugal</h3>
                             <p class="text-sm">Enjoy its historical charm and breathtaking landscapes.</p>
@@ -82,7 +85,7 @@
                 </div>
                 <!-- Destination Card 3 - Spain -->
                 <div class="destination-card destination-card-3 relative w-full h-[300px] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300 group">
-                    <div class="absolute inset-0 flex items-end justify-start p-6 text-white">
+                    <div class="absolute inset-0 flex items-end justify-start p-6 text-white text-shadow">
                         <div>
                             <h3 class="text-2xl font-bold mb-1">Spain</h3>
                             <p class="text-sm">Experience the vibrant culture and modern city life.</p>
